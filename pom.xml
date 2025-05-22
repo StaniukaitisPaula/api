@@ -11,7 +11,7 @@
 		<relativePath />
 	</parent>
 
-	<groupId>br.com.fiap.gestao</groupId>
+	<groupId>br.com.fiap.acolher</groupId>
 	<artifactId>api-acolher</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
