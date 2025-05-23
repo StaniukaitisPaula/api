@@ -10,10 +10,10 @@ import javax.persistence.*;
 public class Funcionario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "funcionario_seq")
-    @SequenceGenerator(name = "funcionario_seq", sequenceName = "SEQ_FUNCIONARIO", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_funcionario")
     private Long idFuncionario;
+
 
     @Column(name = "email", nullable = false)
     private String email;

@@ -14,13 +14,13 @@ public class BancoHorasDT0 {
     private LocalDate data;
     private Double horasExtras;
     private Double horasPagas;
-    private FuncionarioDTO funcionario;
+    private Long idFuncionario;
 
     public BancoHorasDT0(BancoHoras bancoHoras) {
         this.idBancoHoras = bancoHoras.getIdBancoHoras();
         this.data = bancoHoras.getData();
         this.horasExtras = bancoHoras.getHorasExtras();
         this.horasPagas = bancoHoras.getHorasPagas();
-        this.funcionario = new FuncionarioDTO(bancoHoras.getFuncionario());
+        this.idFuncionario = bancoHoras.getFuncionario().getIdFuncionario();
     }
 }

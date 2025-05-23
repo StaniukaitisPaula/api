@@ -9,9 +9,11 @@ import lombok.NoArgsConstructor;
 public class FuncionarioDTO {
     private Long idFuncionario;
     private String email;
+    private String senha;
 
     public FuncionarioDTO(Funcionario funcionario) {
         this.idFuncionario = funcionario.getIdFuncionario();
         this.email = funcionario.getEmail();
-    }
+        this.senha = funcionario.getSenha();
+     }
 }

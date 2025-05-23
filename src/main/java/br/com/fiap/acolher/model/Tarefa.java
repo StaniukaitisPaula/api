@@ -28,4 +28,5 @@ public class Tarefa {
     @ManyToOne
     @JoinColumn(name = "id_funcionario", nullable = false)
     private Funcionario funcionario;
+
 }
